@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" charset="utf-8">
+  <meta name="viewport1" content="width=device-width, initial-scale=1">
+  <title>Marks Mapping</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <span onclick="openNav()"></span>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+        <div id="main">
+          <span style="color:white;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <a href="#">School XYZ</a> </span>
+        </div>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign Out</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="main">
+
+    <div class="container">
+      <form class="" action="index.html" method="post">
+        <div class="Session">
+          <label for="Session">Session</label>
+          <br>
+          <select class="form-control form-control-sm" style="width:50%;" placeholder="Select an option" autofocus name="Session" id="" required>
+            <option value="">Selectan option</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+          </select>
+        </div>
+        <br>
+        <div class="class">
+          <label for="Class">Class</label>
+          <br>
+          <select class="form-control form-control-sm" style="width:50%;" placeholder="Select an option" autofocus name="Class" id="" required>
+            <option value="">Selectan option</option>
+            <option value="X">X</option>
+            <option value="XI">XI</option>
+            <option value="XII">XII</option>
+          </select>
+        </div>
+        <br>
+        <div class="ExamType">
+          <label for="ExamType">Exam Type</label>
+          <br>
+          <select class="form-control form-control-sm" style="width:50%;" placeholder="Select an option" autofocus name="ExamType" id="" required>
+            <option value="">Selectan option</option>
+            <option value="Online">Online</option>
+            <option value="Offline">Offline</option>
+          </select>
+        </div>
+        <br>
+        <div class="Subject">
+          <label for="Subject">Subject</label>
+          <br>
+          <select class="form-control form-control-sm" style="width:50%;" placeholder="Select an option" autofocus name="Session" id="" required>
+            <option value="">Selectan option</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>option>
+          </select>
+        </div>
+        <br>
+
+        <div class="">
+          <label for="maxMarks">Max Marks</label>
+          <input class="form-control form-control-sm" style="width:50%;" autofocus type="text" name="" value="" required>
+        </div>
+        <br>
+        <div class="">
+          <label for="maxMarks">Min Marks</label>
+          <input class="form-control form-control-sm" style="width:50%;" autofocus type="text" name="" value="" required>
+        </div>
+        <br>
+        <div class="">
+          <label for="maxMarks">Weightage</label>
+          <div class="row">
+
+            <!-- <div class="col-xs-12">
+
+            </div> -->
+          </div>
+          <div class="row">
+            <div class="col-md-6" style="padding-right: 0px;width:50%;">
+              <textarea class="form-control form-control-sm" autofocus name="Weightage" rows="1" cols="35"></textarea>
+            </div>
+            <div class="col-md-1" style="padding-left: 0px;padding-right: 0px;width:35px;">
+              /100
+            </div>
+            <div class="col">
+              <button class="btn searchbutton" type="button" name="button">Search</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="">
+          <label for="">Show <input type="number" style="width:10%;" name="" value=""> entries</label>
+        </div>
+        <div class="">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="5" style="text-align:center;"><span>no data available</span></td>
+              </tr>
+              <tr>
+                <td> <input type="text" placeholder="ID" name="ID" value=""> </td>
+                <td> <input type="text" placeholder="Name" name="Name" value=""> </td>
+                <td> <input type="text" placeholder="Title" name="Title" value=""> </td>
+                <td> <input type="text" placeholder="Description" name="Description" value=""> </td>
+                <td> <input type="text" placeholder="Action" name="Action" value=""> </td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </div>
+        <div class="">
+          <p>showing 0 to 0 of 0 entries </p>
+        </div>
+        <div class="">
+          <p style="text-align:right;"> <a href="#">Previous</a> <a href="#">Next</a> </p>
+        </div>
+
+
+
+
+
+
+
+
+
+      </form>
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
